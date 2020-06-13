@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const mainWin = document.querySelector('#int')
   const problem = document.querySelector('#problem')
-  const hintFeed = document.querySelector('#hint')
-  const userAnswerHTML = '<form id="the-asnwwer" action=""><label id="number-label">Your Answer: <input type="number" id="number" name="number" min="1" max="99" placeholder="0"></label><div id="answer">Submit</div></form>'
   const playAgainHTML = 'Great Job!<br /><div id="play-again" onclick="window.location.reload()">Play Again</div>'
-  var turns 
+  var turns
   var choice = null
 
   function hintOne (z) {
@@ -82,10 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
         guessN = userAnswer.value
         if (guessN == c) {
           mainWin.innerHTML = 'Correct!<br />' + pFeedback(cheers)
-          //hintFeed.innerHTML = ''
           multiplication()
         } else {
-          //mainWin.innerHTML = ''
           mainWin.innerHTML = 'Try again. Here is a hint. The answer is one of these three numbers:<br /><div id="hint-series"><span class="hinted">' + hint[0] + '</span><span class="hinted">' + hint[1] + '</span><span class="hinted">' + hint[2] + '</span></div>'
         }
       })
@@ -119,8 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // this starts main sequence
-  mainWin.innerHTML = 'Would you like to practice multiplication or division?<form id="formselection"><div id="problem-selection"><label for="multiplication"><input type="radio" id="multiplication" class="input-radio" value="multiplication" name="problem-selection">Multiplication </label><label for="division"><input type="radio" id="division" class="input-radio" value="division" name="problem-selection">Division</label></div></label><div id="user-turns">Submit</div></div></form>'
-  const userTurns = document.querySelector('#user-turns')
+  mainWin.innerHTML = 'Would you like to practice multiplication or division?<form id="formselection"><div id="problem-selection"><label for="multiplication"><input type="radio" id="multiplication" class="input-radio" value="multiplication" name="problem-selection">Multiplication </label><label for="division"><input type="radio" id="division" class="input-radio" value="division" name="problem-selection">Division</label></div></label><div id="user-choice">Submit</div></div></form>'
+  const userTurns = document.querySelector('#user-choice')
   const userSelection = document.getElementsByName('problem-selection')
   userTurns.addEventListener('click', () => {
     choice = problemSelection(userSelection)

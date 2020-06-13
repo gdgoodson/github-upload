@@ -86,7 +86,7 @@ input {
   text-align: center;
 }
 
-#answer, #user-turns, #play-again {
+#answer, #user-choice, #play-again {
   background-color: #C73866;
   color: white;
   font-size: 30px;
