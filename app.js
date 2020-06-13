@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
       answerButton.addEventListener('click', () => {
         guessN = userAnswer.value
         if (guessN == c) {
-          mainWin.innerHTML = 'Correct!<br />' + pFeedback(cheers)
           multiplication()
+          mainWin.innerHTML = 'Correct!<br />' + pFeedback(cheers)
         } else {
           mainWin.innerHTML = 'Try again. Here is a hint. The answer is one of these three numbers:<br /><div id="hint-series"><span class="hinted">' + hint[0] + '</span><span class="hinted">' + hint[1] + '</span><span class="hinted">' + hint[2] + '</span></div>'
         }
@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
       answerButton.addEventListener('click', () => {
         guessN = userAnswer.value
         if (guessN == a) {
-          mainWin.innerHTML = 'Correct!<br />' + pFeedback(cheers)
           division()
+          mainWin.innerHTML = 'Correct!<br />' + pFeedback(cheers)
         } else {
           mainWin.innerHTML = 'Try again. Here is a hint. The answer is one of these three numbers:<br /><div id="hint-series"><span class="hinted">' + hint[0] + '</span><span class="hinted">' + hint[1] + '</span><span class="hinted">' + hint[2] + '</span></div>'
         }
