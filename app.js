@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const problem = document.querySelector('#problem')
   const hintFeed = document.querySelector('#hint')
   const userAnswerHTML = '<form id="the-asnwwer" action=""><label id="number-label">Your Answer: <input type="number" id="number" name="number" min="1" max="99" placeholder="0"></label><div id="answer">Submit</div></form>'
-  const = playAgainHTML = 'Great Job!<br /><div id="play-again" onclick="window.location.reload()">Play Again</div>'
-  var turns
+  const playAgainHTML = 'Great Job!<br /><div id="play-again" onclick="window.location.reload()">Play Again</div>'
+  var turns 
   var choice = null
 
   function hintOne (z) {
