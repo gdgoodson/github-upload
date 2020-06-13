@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const mainWin = document.querySelector('#int')
   const problem = document.querySelector('#problem')
+  const cheersE = document.querySelector('#cheers')
   const playAgainHTML = 'Great Job!<br /><div id="play-again" onclick="window.location.reload()">Play Again</div>'
   var turns
   var choice = null
